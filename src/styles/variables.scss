@@ -4,3 +4,9 @@ $text-color: #666666;
 $text-contrast: #ffffff;
 $surface-background: #ffffff;
 
+$breakpoints: (
+    xs: ( min:0px, max: 730px),
+    sm: ( min:731px, max: 899px ),
+    md: ( min: 900px, max: 1380px),
+    xl: ( min: 1381px, max: 9999px )
+);

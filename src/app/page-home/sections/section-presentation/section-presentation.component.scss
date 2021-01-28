@@ -1,7 +1,15 @@
+@import "../../../../styles/mixins/mixins.scss";
 section {
     background-color: var(--secondary-color);
     color: var(--text-contrast);
     min-height: 34rem;
+    @include xs {
+        .img {
+            display: none;
+        }
+        min-height: auto;
+    }
+    
     .content {
         > div {
             &.header {

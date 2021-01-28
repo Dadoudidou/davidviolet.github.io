@@ -1,3 +1,4 @@
+@import "../../styles/mixins/mixins.scss";
 h2 {
     span {
         display: inline-block;
@@ -34,5 +35,10 @@ section {
                 border-radius: 50%;
             }
         }
+    }
+}
+.decor {
+    @include xs {
+        display: none;
     }
 }

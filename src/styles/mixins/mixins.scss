@@ -1,3 +1,5 @@
+@import "./../variables.scss";
+
 // TYPOGRAPHY
 @mixin typography-thin { font-weight: 100; }
 @mixin typography-extra-light { font-weight: 200; }
@@ -11,3 +13,33 @@
 
 @mixin typography-roboto { font-family: 'roboto', sans-serif; }
 @mixin typography-cookie { font-family: 'cookie', cursive; }
+
+// RESPONSIVE
+@mixin xs {
+    $mq: map-get($map: $breakpoints, $key: "xs");
+    @media (min-width: #{map-get($mq, "min")}) and (max-width: #{map-get($mq, "max")})
+    {
+        @content;
+    }
+}
+@mixin sm {
+    $mq: map-get($map: $breakpoints, $key: "sm");
+    @media (min-width: #{map-get($mq, "min")}) and (max-width: #{map-get($mq, "max")})
+    {
+        @content;
+    }
+}
+@mixin md {
+    $mq: map-get($map: $breakpoints, $key: "md");
+    @media (min-width: #{map-get($mq, "min")}) and (max-width: #{map-get($mq, "max")})
+    {
+        @content;
+    }
+}
+@mixin xl {
+    $mq: map-get($map: $breakpoints, $key: "xl");
+    @media (min-width: #{map-get($mq, "min")}) and (max-width: #{map-get($mq, "max")})
+    {
+        @content;
+    }
+}

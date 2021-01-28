@@ -21,6 +21,7 @@ import { IllustrationAuditComponent } from './shared/illustration-audit/illustra
 import { IllustrationConceptionComponent } from './shared/illustration-conception/illustration-conception.component';
 import { IllustrationDeveloppementComponent } from './shared/illustration-developpement/illustration-developpement.component';
 import { IllustrationAccompagnementComponent } from './shared/illustration-accompagnement/illustration-accompagnement.component';
+import { LogoReseauxComponent } from './shared/logo-reseaux/logo-reseaux.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { IllustrationAccompagnementComponent } from './shared/illustration-accom
     IllustrationConceptionComponent,
     IllustrationDeveloppementComponent,
     IllustrationAccompagnementComponent,
+    LogoReseauxComponent,
   ],
   imports: [
     BrowserModule,

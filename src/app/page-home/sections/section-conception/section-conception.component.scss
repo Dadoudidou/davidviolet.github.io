@@ -1,9 +1,16 @@
 :host {
     position: relative;
 }
+
 .decor {
+    background-image: url("/assets/conception-decor.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
     position: absolute;
-    top: -100px;
-    right: 0px;
+    top: -25%;
+    right: 0;
+    height: 150%;
+    width: 25vw;
     z-index: -1;
 }
