@@ -1,0 +1,13 @@
+// TYPOGRAPHY
+@mixin typography-thin { font-weight: 100; }
+@mixin typography-extra-light { font-weight: 200; }
+@mixin typography-light { font-weight: 300; }
+@mixin typography-normal { font-weight: 400; }
+@mixin typography-medium { font-weight: 500; }
+@mixin typography-semi-bold { font-weight: 600; }
+@mixin typography-bold { font-weight: 700; }
+@mixin typography-extra-bold { font-weight: 800; }
+@mixin typography-black { font-weight: 900; }
+
+@mixin typography-roboto { font-family: 'roboto', sans-serif; }
+@mixin typography-cookie { font-family: 'cookie', cursive; }

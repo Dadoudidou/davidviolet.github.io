@@ -14,6 +14,8 @@ import { SectionRealisationsComponent } from './page-home/sections/section-reali
 import { SectionContactComponent } from './page-home/sections/section-contact/section-contact.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { LogoLinkedinComponent } from './shared/logo-linkedin/logo-linkedin.component';
+import { LogoDribbbleComponent } from './shared/logo-dribbble/logo-dribbble.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     SectionContactComponent,
     HeaderComponent,
     FooterComponent,
+    LogoLinkedinComponent,
+    LogoDribbbleComponent,
   ],
   imports: [
     BrowserModule,
