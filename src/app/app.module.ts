@@ -16,6 +16,11 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LogoLinkedinComponent } from './shared/logo-linkedin/logo-linkedin.component';
 import { LogoDribbbleComponent } from './shared/logo-dribbble/logo-dribbble.component';
+import { IllustrationPresentationComponent } from './shared/illustration-presentation/illustration-presentation.component';
+import { IllustrationAuditComponent } from './shared/illustration-audit/illustration-audit.component';
+import { IllustrationConceptionComponent } from './shared/illustration-conception/illustration-conception.component';
+import { IllustrationDeveloppementComponent } from './shared/illustration-developpement/illustration-developpement.component';
+import { IllustrationAccompagnementComponent } from './shared/illustration-accompagnement/illustration-accompagnement.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +38,11 @@ import { LogoDribbbleComponent } from './shared/logo-dribbble/logo-dribbble.comp
     FooterComponent,
     LogoLinkedinComponent,
     LogoDribbbleComponent,
+    IllustrationPresentationComponent,
+    IllustrationAuditComponent,
+    IllustrationConceptionComponent,
+    IllustrationDeveloppementComponent,
+    IllustrationAccompagnementComponent,
   ],
   imports: [
     BrowserModule,

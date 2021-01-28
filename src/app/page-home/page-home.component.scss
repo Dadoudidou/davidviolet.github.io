@@ -1,0 +1,38 @@
+h2 {
+    span {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        text-align: center;
+        color: var(--text-contrast);
+    }
+}
+section {
+    position: relative;
+    .container {
+        min-height: inherit;
+    }
+    
+}
+.content {
+    ul {
+        margin-top: 2rem;
+        list-style: none;
+        padding: 0;
+        li {
+            padding-bottom: 1rem;
+            &::before {
+                content: "";
+                display: inline-block;
+                background: var(--primary-color);
+                width: .5rem;
+                height: .5rem;
+                margin-right: 1rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}

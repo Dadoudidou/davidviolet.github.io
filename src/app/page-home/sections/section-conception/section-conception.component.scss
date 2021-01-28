@@ -1,0 +1,9 @@
+:host {
+    position: relative;
+}
+.decor {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    z-index: -1;
+}

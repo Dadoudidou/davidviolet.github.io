@@ -1,0 +1,14 @@
+:host { position: relative;}
+
+.deco {
+    background-image: url("/assets/accompagnement-decor.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50vw;
+    z-index: -1;
+}

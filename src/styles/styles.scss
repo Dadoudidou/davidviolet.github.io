@@ -31,6 +31,24 @@ html, body {
 .text-align-right { text-align: right; }
 .text-align-center { text-align: center; }
 .white-space-nowrap { white-space: nowrap; }
+.width-full { width: 100%; }
+.height-full { height: 100%; }
+
+.d-grid { display: grid; }
+.grid-two-columns { 
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 2rem;
+}
+.grid-three-columns { 
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 2rem;
+}
+.grid-column-reverse {
+    grid-auto-flow: dense;
+    > div:first-child {
+        grid-column: 2;
+    }
+}
 
 // margin and padding
 .ml-auto { margin-left: auto ; }
@@ -83,10 +101,15 @@ h2 {
     font-size: 2rem;
     line-height: 2.5rem;
     @include typography-normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    @include typography-normal;
 }
 .subtitle {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .body1 {
     font-size: 3rem;
@@ -101,6 +124,7 @@ h2 {
     margin-right: auto;
 }
 section {
-    min-height: 34rem;
+    min-height: 40rem;
     scroll-snap-type: y proximity;
+    z-index: 0;
 }
