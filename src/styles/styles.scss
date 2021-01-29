@@ -19,6 +19,7 @@ html, body {
     color: var(--text-color);
     @include typography-roboto;
     scroll-behavior: smooth;
+    //scroll-snap-type: y proximity;
     @include xs {
         background-color: hsl(0deg 0% 96%);
     }
@@ -138,7 +139,8 @@ h2 {
 }
 section {
     min-height: 40rem;
-    scroll-snap-type: y proximity;
+    scroll-snap-align: start;
+    
     z-index: 0;
     @include xs {
         min-height: auto;
