@@ -1,0 +1,10 @@
+<a class="realisation" [class.disabled]="!realisation" [routerLink]="realisation ? ['realisations', realisation.tag] : []" >
+    <div *ngIf="!realisation" class="none">
+        A venir...
+    </div>
+    <div *ngIf="realisation" class="thumbnail" [ngStyle]="{ 'background-image': 'url('+folder+realisation.tag+'/'+realisation.thumbnail+')' }"></div>
+    <div *ngIf="realisation" class="content">
+        <p class="subtitle">{{realisation.title}}</p>
+        <p class="description">{{realisation.description}}</p>
+    </div>
+</a>

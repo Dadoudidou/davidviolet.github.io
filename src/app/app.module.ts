@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { IllustrationConceptionComponent } from './shared/illustration-conceptio
 import { IllustrationDeveloppementComponent } from './shared/illustration-developpement/illustration-developpement.component';
 import { IllustrationAccompagnementComponent } from './shared/illustration-accompagnement/illustration-accompagnement.component';
 import { LogoReseauxComponent } from './shared/logo-reseaux/logo-reseaux.component';
+import { RealisationCardComponent } from './shared/realisation-card/realisation-card.component';
 
 @NgModule({
   declarations: [
@@ -45,9 +47,11 @@ import { LogoReseauxComponent } from './shared/logo-reseaux/logo-reseaux.compone
     IllustrationDeveloppementComponent,
     IllustrationAccompagnementComponent,
     LogoReseauxComponent,
+    RealisationCardComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

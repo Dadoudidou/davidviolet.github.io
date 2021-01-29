@@ -1,3 +1,21 @@
 <section id="realisations">
-    
+    <div class="decor">
+        <svg width="400" height="101" viewBox="0 0 400 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M399.642 100.878H1.73798e-05L0 0.314453C9.25352 13.1789 19.2286 24.6056 30.3938 33.3782C63.7112 59.5562 98.1474 50.4944 132.445 41.4691C163.001 33.4285 193.447 25.4168 222.894 42.3782C234.653 49.1515 244.625 55.4469 253.744 61.2044C293.095 86.0483 316.585 100.878 399.394 100.878C399.477 100.878 399.559 100.878 399.642 100.878Z" fill="#6B41A6"/>
+        </svg>
+    </div>
+    <div class="line-decor">
+        <div class="container">
+            <div class="line left"></div>
+        </div>
+    </div>
+    <div class="container text-align-center">
+        <h2>Mes réalisations</h2>
+        <div>
+            <div class="content grid-three-columns d-grid">
+                <app-realisation-card *ngFor="let realisation of realisations" [realisation]="realisation"></app-realisation-card>
+            </div>
+        </div>
+        <a routerLink="realisations" class="all">Voir toutes les réalisations</a>
+    </div>
 </section>

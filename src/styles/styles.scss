@@ -50,6 +50,7 @@ html, body {
 .grid-three-columns { 
     grid-template-columns: repeat(3, 1fr); 
     column-gap: 2rem;
+    row-gap: 2rem;
     @include sm { column-gap: 1rem; }
     @include xs { 
         display: block;
