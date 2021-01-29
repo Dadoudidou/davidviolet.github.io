@@ -1,0 +1,28 @@
+section {
+    text-align: center;
+    min-height: auto;
+    padding-bottom: 5rem;
+    .contact {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 6rem;
+        h2 {
+            margin-bottom: 2rem;
+        }
+        a {
+            font-weight: bold;
+            > span {
+                color: var(--primary-color);
+            }
+        }
+        
+    }
+}
+.arrow {
+    stroke: none;
+    stroke-width: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 32 32;
+    fill: var(--primary-color);
+}

@@ -72,15 +72,18 @@ section {
             &.right {
                 background-image: url(/assets/line-right.svg);
             }
-            path {
-                stroke: var(--primary-color);
-                stroke-width: 16;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: 32 32;
-                fill: none;
-            }
+            
         }
         
+    }
+}
+.line {
+    path {
+        stroke: var(--primary-color);
+        stroke-width: 16;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 32 32;
+        fill: none;
     }
 }
