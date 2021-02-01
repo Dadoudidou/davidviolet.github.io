@@ -1,0 +1,12 @@
+<div class="container">
+    <div *ngIf="loading; then loadingBlock else loadedBlock"></div>
+</div>
+
+<ng-template #loadingBlock>Loading...</ng-template>
+<ng-template #loadedBlock>
+    <ng-container *ngIf="realisation; then validBlock else undefinedBlock"></ng-container>
+</ng-template>
+<ng-template #undefinedBlock>Contenu inexistant</ng-template>
+<ng-template #validBlock>
+    <markdown [src]="folder+realisation.tag+'/'+realisation.file"></markdown>
+</ng-template>

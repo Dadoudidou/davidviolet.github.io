@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClient, HttpClientModule } from "@angular/common/http"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +24,8 @@ import { IllustrationDeveloppementComponent } from './shared/illustration-develo
 import { IllustrationAccompagnementComponent } from './shared/illustration-accompagnement/illustration-accompagnement.component';
 import { LogoReseauxComponent } from './shared/logo-reseaux/logo-reseaux.component';
 import { RealisationCardComponent } from './shared/realisation-card/realisation-card.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { PageRealisationComponent } from './page-realisation/page-realisation.component';
 
 @NgModule({
   declarations: [
@@ -48,10 +50,12 @@ import { RealisationCardComponent } from './shared/realisation-card/realisation-
     IllustrationAccompagnementComponent,
     LogoReseauxComponent,
     RealisationCardComponent,
+    PageRealisationComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
     AppRoutingModule
   ],
   providers: [],
