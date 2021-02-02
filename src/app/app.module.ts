@@ -24,8 +24,9 @@ import { IllustrationDeveloppementComponent } from './shared/illustration-develo
 import { IllustrationAccompagnementComponent } from './shared/illustration-accompagnement/illustration-accompagnement.component';
 import { LogoReseauxComponent } from './shared/logo-reseaux/logo-reseaux.component';
 import { RealisationCardComponent } from './shared/realisation-card/realisation-card.component';
-import { MarkdownModule } from 'ngx-markdown';
+import { MarkdownModule, MarkedRenderer } from 'ngx-markdown';
 import { PageRealisationComponent } from './page-realisation/page-realisation.component';
+import { SlidesComponent } from './shared/slides/slides.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { PageRealisationComponent } from './page-realisation/page-realisation.co
     LogoReseauxComponent,
     RealisationCardComponent,
     PageRealisationComponent,
+    SlidesComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,3 +64,5 @@ import { PageRealisationComponent } from './page-realisation/page-realisation.co
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

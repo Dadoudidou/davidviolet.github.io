@@ -1,0 +1,17 @@
+<div class="slider">
+    <div class="layer-container">
+        <div class="layer"  >
+            <img width="100%" [src]="slides[currentSlide]" />
+        </div>
+        <div class="actions-btns">
+            <button><i class="material-icons">fullscreen</i></button>
+        </div>
+        <div *ngIf="currentSlide > 0" class="left-btn">
+            <button (click)="prevImage()"><i class="material-icons">keyboard_arrow_left</i></button>
+        </div>
+        <div *ngIf="(currentSlide + 1) < slides_length" class="right-btn">
+            <button (click)="nextImage()"><i class="material-icons">keyboard_arrow_right</i></button>
+        </div>
+    </div>
+    <div class="counter"><span>{{currentSlide + 1}} - {{slides_length}}</span></div>
+</div>

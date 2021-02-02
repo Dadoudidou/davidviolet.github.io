@@ -1,0 +1,68 @@
+.slider {
+    .layer-container {
+        min-height: 12rem;
+        position: relative;
+        border: 1px solid gray;
+
+        .layer {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        button {
+            border: 0;
+            background: transparent;
+            outline: 0;
+            padding: .5rem;
+            cursor: pointer;
+            transition: background-color 500ms ease;
+            &:hover {
+                border: 0;
+                background-color: rgba(255,255,255,.1);
+            }
+            color: rgba(255,255,255,1);
+        }
+        .actions-btns {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(0,0,0,.6);
+            transition: opacity 500ms ease;
+            opacity: .2;
+        }
+        .left-btn, .right-btn {
+            position: absolute;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            background-color: rgba(0,0,0,.6);
+            top: 50%;
+            margin-top: -3rem;
+            transition: opacity 500ms ease;
+            opacity: .2;
+            > button {
+                padding: 2rem 1rem;
+            }
+        }
+        .left-btn { left: 0; }
+        .right-btn { right: 0; }
+    }
+    .counter {
+        text-align: center;
+        margin-top: 1rem;
+        span {
+            display: inline-block;
+            padding: .5rem 2rem;
+            background-color: rgba(0,0,0,.6);
+            color: rgba(255,255,255,1);
+            border-radius: 50px;
+        }
+    }
+
+    &:hover {
+        .layer-container {
+            .actions-btns { opacity: 1; }
+            .left-btn, .right-btn { opacity: 1; }
+        }
+    }
+}
