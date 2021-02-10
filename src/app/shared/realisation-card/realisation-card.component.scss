@@ -1,3 +1,5 @@
+@import "../../../styles/mixins/mixins.scss";
+
 .realisation {
     height: 15rem;
     display: block;
@@ -33,6 +35,7 @@
         left: 0;
         z-index: 0;
         padding: .5rem;
+        color: var(--text-contrast);
         &::before {
             content: "";
             position: absolute;
@@ -55,5 +58,12 @@
     &.disabled {
         pointer-events: none;
         cursor: default;
+    }
+
+    @include xs {
+        margin-bottom: 2rem;
+        &.disabled {
+            display: none;
+        }
     }
 }

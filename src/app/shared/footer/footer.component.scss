@@ -1,6 +1,17 @@
+@import "../../../styles/mixins/mixins.scss";
+
 :host {
     display: block;
     background-color: #736E79;
     height: 5rem;
     color: var(--text-contrast);
+    @include xs {
+        height: 8rem;
+        .text-align-left, .text-align-right {
+            text-align: center;
+        }
+        .container > div {
+            margin-top: .5rem;
+        }
+    }
 }

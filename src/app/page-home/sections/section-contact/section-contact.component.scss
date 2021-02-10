@@ -1,3 +1,5 @@
+@import "../../../../styles/mixins/mixins.scss";
+
 section {
     text-align: center;
     min-height: auto;
@@ -16,6 +18,9 @@ section {
             }
         }
         
+    }
+    @include xs {
+        svg { display: none; }
     }
 }
 .arrow {

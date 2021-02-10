@@ -63,6 +63,19 @@ html, body {
     }
 }
 
+.d-xs-flex {
+    display: none !important;
+    @include xs {
+        display: flex !important;
+        align-items: center;
+    }
+}
+.d-xs-none {
+    @include xs {
+        display: none !important;
+    }
+}
+
 // margin and padding
 .ml-auto { margin-left: auto ; }
 .mr-auto { margin-right: auto ; }
@@ -172,5 +185,18 @@ section {
         margin-bottom: 5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+}
+.app-container {
+    position: relative;
+    min-height: 100vh;
+    .content-wrap {
+        padding-bottom: 8rem;
+    }
+    app-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }

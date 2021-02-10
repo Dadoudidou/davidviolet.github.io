@@ -1,11 +1,22 @@
 <div class="container d-flex align-items-center">
     <a><h1>David Violet</h1></a>
     <div class="text-align-center ml-auto mr-auto menu">
-        <a routerLink="" routerLinkActive="active">A propos</a>
-        <a routerLink="realisations" routerLinkActive="active">Réalisations</a>
-        <a routerLink="" fragment="contact">Me contacter</a>
+        <a class="d-xs-flex" (click)="toggleMenu()">Menu <i class="material-icons">menu</i></a>
+        <div *ngIf="true then menu else menu"></div>
     </div>
     <div class="text-align-right white-space-nowrap reseaux">
         <app-logo-reseaux></app-logo-reseaux>
     </div>
 </div>
+
+<div class="menu-overlay" [class.opened]="menuOpened" (click)="toggleMenu()">
+    <div>
+        <div *ngIf="true then menu else menu"></div>
+    </div>
+</div>
+
+<ng-template #menu>
+    <a class="d-xs-none"  routerLink="" routerLinkActive="active">A propos</a>
+    <a class="d-xs-none"  routerLink="realisations" routerLinkActive="active">Réalisations</a>
+    <a class="d-xs-none"  routerLink="" fragment="contact">Me contacter</a>
+</ng-template>

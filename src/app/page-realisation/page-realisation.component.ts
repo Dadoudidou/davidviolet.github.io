@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, ComponentFactoryResolver, ElementRef, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, ElementRef, OnInit, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MarkdownComponent } from 'ngx-markdown';
 import { take } from 'rxjs/operators';
@@ -10,7 +10,8 @@ import { SlidesComponent } from '../shared/slides/slides.component';
 @Component({
   selector: 'app-page-realisation',
   templateUrl: './page-realisation.component.html',
-  styleUrls: ['./page-realisation.component.scss']
+  styleUrls: ['./page-realisation.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PageRealisationComponent implements OnInit {
 
@@ -27,6 +28,7 @@ export class PageRealisationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    console.log("page realisation");
     this.loading = true;
     this.folder = this.realisationsService.getFolder();
     this.route.params.subscribe(routeParams => { 

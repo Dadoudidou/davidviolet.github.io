@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Realisation } from '../models/realisation.model';
+import { RealisationService } from '../services/realisation.service';
 
 @Component({
   selector: 'app-page-realisations',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageRealisationsComponent implements OnInit {
 
-  constructor() { }
+  realisations: Realisation[] = [];
+  
+  constructor(
+    private realisationService: RealisationService
+  ) { }
 
   ngOnInit(): void {
+    this.realisationService.loadRealisations()
+      .subscribe(x => {
+        this.realisations = x;
+      });
   }
 
 }

@@ -1,1 +1,8 @@
-<p>page-realisations works!</p>
+<div class="container text-align-center">
+    <h2>Mes réalisations</h2>
+    <div>
+        <div class="content grid-three-columns d-grid">
+            <app-realisation-card *ngFor="let realisation of realisations" [realisation]="realisation"></app-realisation-card>
+        </div>
+    </div>
+</div>

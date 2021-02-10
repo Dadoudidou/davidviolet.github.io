@@ -1,4 +1,4 @@
-<a class="realisation" [class.disabled]="!realisation" [routerLink]="realisation ? ['realisations', realisation.tag] : []" >
+<a class="realisation" [class.disabled]="!realisation" [routerLink]="realisation ? ['/realisations', realisation.tag] : []" >
     <div *ngIf="!realisation" class="none">
         A venir...
     </div>
